@@ -27,7 +27,7 @@ import {
   SiTensorflow,
   SiNumpy,
   SiPandas,
- 
+
 
 } from 'react-icons/si';
 
@@ -39,47 +39,47 @@ export const aboutData = [
     title: 'skills',
     info: [
       {
-        title: 'Web Development',
+        title: 'Web frameworks',
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
-          <SiFramer/>,
-          <SiNextdotjs/>,
-          <SiFlask/>,
-         
+          <SiFramer />,
+          <SiNextdotjs />,
+          <SiFlask />,
+
         ],
       },
       {
         title: 'UI/UX Design',
-        icons: [ <SiAdobexd />, <SiAdobephotoshop />],
+        icons: [<SiAdobexd />, <SiAdobephotoshop />],
       },
       {
         title: 'Programming Languages',
-        icons:[
-          
-            <FaPython/>,
-          
-            <FaJava/>,
-            <SiCplusplus/>,
-            <SiDart/>,
-            <SiTailwindcss/>,
-            <SiJavascript/>,
-            
+        icons: [
+
+          <FaPython />,
+
+          <FaJava />,
+          <SiCplusplus />,
+          <SiDart />,
+          <SiTailwindcss />,
+          <SiJavascript />,
+
         ],
       },
       {
-         title: 'AI frameworks',
-         icons: [<SiPytorch/>,
-                 <SiTensorflow/>,
-                  <SiNumpy/>,
-                  <SiPandas/>        
+        title: 'AI frameworks',
+        icons: [<SiPytorch />,
+        <SiTensorflow />,
+        <SiNumpy />,
+        <SiPandas />
         ]
       },
       {
         title: 'LLMS experience',
-        stage: ['GPT-3.5,  ', 'GPT-4,   ' , 'Langchain,   '  , 'Llama 2,   ', 'Pinecone   ']
+        stage: ['GPT-3.5,  ', 'GPT-4,   ', 'Langchain,   ', 'Llama 2,   ', 'Pinecone   ']
       }
 
     ],
@@ -114,7 +114,7 @@ export const aboutData = [
       },
     ],
   },
-  
+
 ];
 
 // components
@@ -133,7 +133,7 @@ const About = () => {
   console.log(index);
   return (
     <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
-      
+
       <motion.div
         variants={fadeIn('right', 0.2)}
         initial='hidden'
@@ -153,7 +153,7 @@ const About = () => {
             exit='hidden'
             className='h2'
           >
-            Curious <span className='text-accent'>SDE</span> with a 
+            Confused <span className='text-accent'>SDE</span> with a
             Global Perspective
           </motion.h2>
           <motion.p
@@ -165,8 +165,8 @@ const About = () => {
           >
             Hailing from a modest background, I've always harbored a deep passion for technology and an insatiable curiosity about the future. My journey from India to Canada to pursue my technological dreams has equipped me with a global perspective, adaptability, and an unyielding drive to innovate as I aspire to make my mark in the world of software engineering.
           </motion.p>
-          
-          
+
+
         </div>
         {/* info */}
         <motion.div
@@ -181,10 +181,9 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
-                  className={`${
-                    index === itemIndex &&
+                  className={`${index === itemIndex &&
                     'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
-                  }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                    }  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
