@@ -31,8 +31,6 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Actually this is very important part of my portfolio. I have
-              worked with many clients and companies. I have worked with many
             </motion.p>
           </div>
 
