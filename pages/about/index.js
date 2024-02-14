@@ -90,7 +90,7 @@ export const aboutData = [
     ],
   },
   {
-    title: "experience",
+    title: "Experience",
     info: [
       {
         title: "Research Assistant",
@@ -154,10 +154,10 @@ const About = () => {
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
             I've always harbored a deep passion for technology and an insatiable
-            curiosity about the future. My journey from India to Canada to
-            pursue my technological dreams has equipped me with a global
-            perspective, adaptability, and an unyielding drive to innovate as I
-            aspire to make my mark in the world of software engineering.
+            curiosity about the future. My journey from USA to Canada to pursue
+            my technological dreams has equipped me with a global perspective,
+            adaptability, and an unyielding drive to innovate as I aspire to
+            make my mark in the world of software engineering.
           </motion.p>
         </div>
         {/* info */}
